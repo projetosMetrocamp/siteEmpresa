@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+
+    <link href="estilos.css" rel="stylesheet">
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+        <div id="interface">
+                <header id="cabecalho">
+                    <hgroup>
+                        <figure class="foto-logo">
+                        <img width="900px" height="500px" src="_imagens/logo.jpg"/>
+                        </figure>
+                        
+                    </hgroup>
+                </header>
+                <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="disc">
+                <li> <a href="index.html">Página Principal</a> </li>
+                <li><a href="produtos.html">Produtos e Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                </ul>
+                </nav>
+                <section id="corpo-contato">
+                <article id="cprincipal">
+
+                <form method="post" id="fContato" action="mailto:leoobarbosa2@gmail.com"/>
+                    <fieldset id="usuario"><legend>Identificação Do Usuário</legend>
+                    <p>Nome: <input type="text" name="tNome" id="cNome size="20" maxlength="30" placeholder="Nome Completo"" </p>
+                    <p>E-mail:<input type="email" name="tMail" id="cMail" size="20" maxlength="40" </p>
+                    <fieldset id="sexo"><legend>Sexo:</legend>
+                        <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br>
+                        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label> </fieldset>
+                        <p>Data de Nascimento <input type="date" name="tNasc" id="cNasc" </p>
+                    </fieldset>
+
+                    <fieldset id="endereço"><legend>Endereço do Usuario</legend>
+                    <p>Logradouro: <input type="text" name="tRua" id="cTua" size="13" maxlength="80" placeholder="Rua, Av, Trav..."> </p>
+                    <p>Número: <input type="number" name="" id="" min="0" max="99999"> </p>
+                    <p>Estado: <select name="tEst" id="cEst"></p>
+                        <optgroup label="Região Sudeste"><option>Rio de Janeiro</option>
+                        <option selected>São Paulo</option>
+                        <option>Minas Gerais</option></optgroup>
+                        <optgroup label="Região Sul"><option>Paraná</option>
+                        <option>Rio Grande Do Sul</option></optgroup>
+                        </select>
+                    <p>Cidade: <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade"> </p>
+                            <datalist>
+                                <option value="Rio de Janeiro"></option>
+                                <option value="Nova Iguaçu"></option>
+                                <option value="Niteroi"></option>
+                            </datalist>
+                    </fieldset>
+
+                    <fieldset id="mensagem"><legend>Mensagem do Usuário:</legend>
+                    <p><label for="cMsg">Mensagem:</p></label>
+                    <textarea name="tMsg" id="cMsg" cols="40" rows="5" placeholder="Deixe sua dúvida ou sugestão"></textarea>
+                    
+                    </fieldset>
+                    
+                        <input type="submit" name="Enviar">
+                </form>
+                <br>
+                </article>
+                </section>
+                
+            <footer id="rodape">
+             <p>Copyright &copy; 2018 - Site realizado por alunos da <a href="https://www.wyden.com.br/unimetrocamp  "target="_blank">Wyden Unimetrocamp</a></p>
+            </footer>
+            </div>
+</body>
+</html>
